@@ -7,25 +7,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
-        Console.WriteLine("Creamos la primera figura:");
-        var figura1 = CrearFigura();
-
-
-        if(figura1 is Cuadrado cuadrado)
-        {
-            Console.WriteLine("Es un cuadrado.");
-        }
-        else if (figura1 is Circulo circulo)
-        {
-            Console.WriteLine("Es un circulo.");
-        }
-
         
         
-        Console.WriteLine("Creamos la segunda figura:");
-        var figura2 = CrearFigura();
-        MostrarMayor(figura1, figura2);
         Console.ReadKey();
     }
 
