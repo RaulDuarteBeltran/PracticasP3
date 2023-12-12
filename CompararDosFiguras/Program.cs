@@ -19,8 +19,22 @@ class Program
                 figuras.Add(figuraNueva);
             }
         } while (true);
+        var figuraMayor = ObtenerFiguraMayor(figuras);
         
         Console.ReadKey();
+    }
+
+    static IFigura ObtenerFiguraMayor(List<IFigura> figuras)
+    {
+        var figuraMayor = figuras[0];
+        foreach(var figura in figuras)
+        {
+            if (figura.Area > figuraMayor.Area)
+            {
+                figuraMayor = figura;
+            }
+        }
+        return figuraMayor;
     }
 
     static IFigura CrearFigura()
