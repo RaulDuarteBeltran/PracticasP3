@@ -37,6 +37,13 @@ class Program
         return figuraMayor;
     }
 
+    static void ImprimirFigura(IFigura figura)
+    {
+        Console.WriteLine($"La figura mayor fue un {figura.Tipo}," +
+            $" su área es de {figura.Area} y su perímetro es de " +
+            $"{figura.Perimetro}.");
+    }
+
     static IFigura CrearFigura()
     {
         Console.WriteLine("Que figura quieres crear?");
