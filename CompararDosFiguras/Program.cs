@@ -7,7 +7,18 @@ class Program
 {
     static void Main(string[] args)
     {
-        
+        var figuras = new List<IFigura>();
+        do
+        {
+            Console.WriteLine("Deseas crear una nueva figura? 1) Si 2) No");
+            var respuesta = Console.ReadLine();
+            if (respuesta == "2") break; //El usuario termina
+            IFigura figuraNueva = CrearFigura();
+            if (figuraNueva != null)
+            {
+                figuras.Add(figuraNueva);
+            }
+        } while (true);
         
         Console.ReadKey();
     }
