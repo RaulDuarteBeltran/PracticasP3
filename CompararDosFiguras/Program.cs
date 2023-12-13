@@ -20,7 +20,7 @@ class Program
             }
         } while (true);
         var figuraMayor = ObtenerFiguraMayor(figuras);
-        
+        ImprimirFigura(figuraMayor);
         Console.ReadKey();
     }
 
