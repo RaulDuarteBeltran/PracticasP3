@@ -39,7 +39,7 @@ class Program
 
     static void ImprimirFigura(IFigura figura)
     {
-        Console.WriteLine($"La figura mayor fue un {figura.Tipo}," +
+        Console.WriteLine($"La figura es un {figura.Tipo}," +
             $" su área es de {figura.Area} y su perímetro es de " +
             $"{figura.Perimetro}.");
     }
