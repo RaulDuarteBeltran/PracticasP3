@@ -82,14 +82,6 @@ class Program
         }
     }
 
-    static void MostrarMayor(IFigura figura1, IFigura figura2)
-    {
-        var figuraMayor = figura1.Area >= figura2.Area ? figura1 : figura2;
-        Console.WriteLine($"La figura mayor fue un {figuraMayor.Tipo}," +
-            $" su área es de {figuraMayor.Area} y su perímetro es de " +
-            $"{figuraMayor.Perimetro}.");
-    }
-
     static double LeerNumero() => double.Parse(Console.ReadLine());
 }
 
