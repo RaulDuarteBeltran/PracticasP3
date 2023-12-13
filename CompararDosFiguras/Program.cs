@@ -7,6 +7,20 @@ class Program
 {
     static void Main(string[] args)
     {
+        List<Cuadrado> cuadrados = new List<Cuadrado>
+        {
+            new Cuadrado(1),
+            new Cuadrado(5),
+            new Cuadrado(3),
+            new Cuadrado(2),
+            new Cuadrado(7)
+        };
+        cuadrados.Sort();
+        foreach(var cuadrado in cuadrados)
+        {
+            ImprimirFigura(cuadrado);
+        }
+
         Console.ReadKey();
     }
 
